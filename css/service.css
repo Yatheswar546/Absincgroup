@@ -1,0 +1,177 @@
+/* Sevices */
+.services-section {
+  position: relative;
+  top : 86px;
+  background: #f8fbfe;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.services-title {
+  font-size: 2.2rem;
+  color: #004a6e;
+  margin-bottom: 15px;
+}
+
+.services-intro {
+  font-size: 1.05rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+/* First Service */
+.expertise-section {
+  position: relative;
+  top: 85px;
+  padding: 60px 20px;
+  background: #f5faff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 140px;
+  flex-wrap: wrap;
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 350px;
+  flex: 1;
+}
+
+.point-card {
+  background-color: #ffffff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.95rem;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.point-card:hover {
+  transform: translateY(-5px);
+  background-color: #e8f4ff;
+}
+
+.center-image {
+  padding-top: 201px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-image img {
+  width: 180px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Other services */
+.flip-card-section {
+  position: relative;
+  top: 86px;
+  padding: 30px 20px;
+  background: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.flip-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.flip-card {
+  background: transparent;
+  width: 320px;
+  height: 320px;
+  perspective: 1000px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: #003366;
+}
+
+.flip-card-back {
+  background-color: #003366;
+  font-size: 16px;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 480px) {
+  .flip-card-container{
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flip-card{
+    width: 90%;
+    max-width: 360px;
+  }
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    top: 177px;
+}
+
+@media screen and (max-width: 500px) {
+
+  .center-image{
+    padding: 0px;
+  }
+
+  .center-image img{
+    height: 450px;
+    width: 350px;
+  }
+
+}
