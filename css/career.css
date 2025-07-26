@@ -1,0 +1,9 @@
+
+/* Footer */
+.footer {
+    position: relative;
+    top: 140px;
+    background: #1B365D;
+    color: white;
+    /* border: 5px solid red; */
+}

@@ -1,0 +1,77 @@
+/* TEAM SECTION */
+.content-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 86px;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 100px;
+  flex-wrap: wrap; /* makes it responsive */
+}
+.head{
+  color: #1B365D;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+.text-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.image-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Leadership Section */
+.leadership-section {
+  position: relative;
+  top: 86px;
+  padding: 40px 20px;
+  background-color: rgba(27, 54, 93); /* light blueish background */
+  color: #1c1c1c; /* dark text for contrast */
+  text-align: center;
+}
+
+.leadership-section .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.leadership-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white; /* deep blue */
+  font-weight: 600;
+}
+
+.leadership-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: white;
+}
+
+/* Insights Section */
+.insights-section {
+    position: relative;
+    top: 85px;
+    padding: 3rem 0;
+    /* border: 5px solid green; */
+}
+
+
+/* Footer */
+.footer {
+    position: relative;
+    top: 85px;
+    background: #1B365D;
+    color: white;
+    /* border: 5px solid red; */
+}
